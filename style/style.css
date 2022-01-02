@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {}
+
+.navbar-header {}
+
+.navbar-welcome {}
+
+.navbar-menu {}
+
+.navbar-contact {}
+
+
+/* Welcome Page */
+.welcome {}
+
+.welcome-header {}
+
+.welcome-subHeader {}
+
+.welcome-paragraph {}
+
+.welcome-img {}
+
+
+/* Menu Page */
+.menu {}
+
+.menu-header {}
+
+.menu-subHeader1 {}
+
+.menu-subHeader2 {}
+
+.menu-subHeader3 {}
+
+.menu-subHeader4 {}
+
+
+/* Contact Page */
+.contact {}
+
+.contact-header {}
+
+.contact-form {}
+
+.contact-name {}
+
+.contact-mail {}
+
+.contact-text {}
+
+.contact-button {}
+
+
+/* Footer */
+.footer {}
