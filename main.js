@@ -20,13 +20,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction footer() {\r\n    let main = document.createElement('div');\r\n    main.classList.add('footer');\r\n\r\n    let icons = document.createElement('div');\r\n    let icon1 = document.createElement('i');\r\n    let icon2 = document.createElement('i');\r\n    let icon3 = document.createElement('i');\r\n    let author = document.createElement('h6');\r\n\r\n    icons.classList.add('footer-icons');\r\n    author.classList.add('footer-author');\r\n    icon1.classList.add('footer-i');\r\n    icon2.classList.add('footer-i');\r\n    icon3.classList.add('footer-i');\r\n\r\n    icon1.innerHTML = '<a href=\"#\"><i style=\"color:black;\" class=\"fab fa-facebook-f fa-2x f-button\"></i></a>';\r\n    icon2.innerHTML =  '<a href=\"#\"><i style=\"color:black;\" class=\"fab fa-instagram fa-2x f-button\"></i></a>';\r\n    icon3.innerHTML = '<a href=\"#\"><i style=\"color:black;\" class=\"fab fa-pinterest fa-2x f-button\"></i></a>';\r\n    author.textContent = 'Copyright © Me 2022';\r\n\r\n    main.appendChild(icons);\r\n    icons.appendChild(icon1);\r\n    icons.appendChild(icon2);\r\n    icons.appendChild(icon3);   \r\n    main.appendChild(author);\r\n\r\n    return main;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://restaurant/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _welcome__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./welcome */ \"./src/welcome.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navigation */ \"./src/navigation.js\");\n\r\n\r\n\r\n\r\n\r\nconst content = document.getElementById('content');\r\ncontent.appendChild((0,_navigation__WEBPACK_IMPORTED_MODULE_3__[\"default\"])());\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation */ \"./src/navigation.js\");\n/* harmony import */ var _welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./welcome */ \"./src/welcome.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst content = document.getElementById('content');\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction navigation() {\r\n    let main = document.createElement('div');\r\n    main.classList.add('navbar');\r\n\r\n    let header = document.createElement('h1');\r\n    let welcome = document.createElement('h3');\r\n    let menu = document.createElement('h3');\r\n    let contact = document.createElement('h3');\r\n\r\n    header.classList.add('header');\r\n    welcome.classList.add('welcome');\r\n    menu.classList.add('menu');\r\n    contact.classList.add('contact');\r\n\r\n    header.textContent = 'League Restaurant';\r\n    welcome.textContent = 'Main';\r\n    menu.textContent = 'Menu';\r\n    contact.textContent = 'Contact';\r\n\r\n    main.appendChild(header);\r\n    main.appendChild(welcome);\r\n    main.appendChild(menu);\r\n    main.appendChild(contact);\r\n\r\n    return main;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navigation);\n\n//# sourceURL=webpack://restaurant/./src/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction navigation() {\r\n    let main = document.createElement('div');\r\n    main.classList.add('navbar');\r\n\r\n    let option = document.createElement('div');\r\n    let welcome = document.createElement('h3');\r\n    let menu = document.createElement('h3');\r\n    let contact = document.createElement('h3');\r\n\r\n    option.classList.add('navbar-option');\r\n    welcome.classList.add('navbar-welcome');\r\n    menu.classList.add('navbar-menu');\r\n    contact.classList.add('navbar-contact');\r\n\r\n    welcome.textContent = 'Main';\r\n    menu.textContent = 'Menu';\r\n    contact.textContent = 'Contact';\r\n\r\n    main.append(option);\r\n    option.appendChild(welcome);\r\n    option.appendChild(menu);\r\n    option.appendChild(contact);\r\n\r\n    return main;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navigation);\n\n//# sourceURL=webpack://restaurant/./src/navigation.js?");
 
 /***/ }),
 

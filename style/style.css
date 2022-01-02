@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 150%;
 }
 
 *, *::after, *::before {
@@ -7,7 +8,8 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 3px;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -16,15 +18,32 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Navigation Bar */
-.navbar {}
+.navbar {
+    border: 2px solid black;
+    height: 15vh;
+    text-align: center;
+    font-family: 'Oooh Baby', cursive;
+}
 
-.navbar-header {}
+.navbar-option {
+    padding: 4vh 10vh;
+    display: flex;
+    justify-content: space-evenly;
 
-.navbar-welcome {}
+}
 
-.navbar-menu {}
+.navbar-welcome {
+    flex: 0 1 15%;
+}
 
-.navbar-contact {}
+.navbar-menu {
+    flex: 0 1 15%;
+}
+
+.navbar-contact {
+    flex: 0 1 15%;
+}
+
 
 
 /* Welcome Page */
@@ -70,4 +89,24 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* Footer */
-.footer {}
+.footer {
+    border: 2px solid black;
+    height: 15vh;
+    text-align: center;
+    font-family: 'Oooh Baby', cursive;
+}
+
+.footer-icons {
+    display: flex;
+
+    padding: 1vh 10vh;
+    justify-content: space-evenly;
+}
+
+.footer-i {
+    flex: 0 1 15%;
+}
+
+.footer-author {
+    color: #888;
+}
