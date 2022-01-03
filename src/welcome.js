@@ -2,27 +2,41 @@ function welcome() {
     let main = document.createElement('div');
     main.classList.add('welcome');
 
-    let header = document.createElement('h2');
-    let subHeader = document.createElement('h3');
+    let div1 = document.createElement('div');
+    let header = document.createElement('h1');
+    
+    let div2 = document.createElement('div');
+    let subHeader = document.createElement('h2');
+    let img1 = document.createElement('img');
     let paragraph = document.createElement('p');
-    let chefImg = document.createElement('img');
+    let img2 = document.createElement('img');
 
+    div1.classList.add('welcome-div1');
     header.classList.add('welcome-header');
+
+    div2.classList.add('welcome-div2');
     subHeader.classList.add('welcome-subHeader');
+    img1.classList.add('welcome-img1');
     paragraph.classList.add('welcome-paragraph');
-    chefImg.classList.add('welcome-img');
+    img2.classList.add('welcome-img2');
 
-    header.textContent = 'Welcome to League Restaurant';
-    subHeader.textContent = 'Feel the Experience Taste the Flavor';
-    paragraph.textContent = 'Best products with a unique taste makes you special in League Restaurant. League Restaurant provide the most quality foods and chefs all over the world.';
-    chefImg.setAttribute('src', '../dist/image/open.jpg');
-    chefImg.setAttribute('width','100%');
+    header.textContent = 'There’s a recipe for\nevery Life';
+    header.setAttribute('style', 'white-space: pre;');
+    subHeader.textContent = 'Our Philosophy';
+    paragraph.textContent = 'Best products with a unique taste makes you special in the Restaurant. The Restaurant provide the most quality foods and chefs all over the world.';
+    img1.setAttribute('src', '../dist/image/sashimi.jpg');
+    img2.setAttribute('src', '../dist/image/cof.jpg');
 
 
-    main.appendChild(header);
+    main.appendChild(div1);
+    div1.appendChild(header);
+
     main.appendChild(subHeader);
-    main.appendChild(paragraph);
-    main.appendChild(chefImg);
+
+    main.appendChild(div2);
+    div2.appendChild(img1);
+    div2.appendChild(paragraph);
+    div2.appendChild(img2);
 
     return main;
 }
