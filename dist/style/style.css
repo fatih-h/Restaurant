@@ -80,8 +80,8 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     height: 60vh;
     display: flex;
-    gap:1em;
-    padding:0 10vw;
+    gap: 1em;
+    padding: 0 10vw;
 
 }
 
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .welcome-paragraph {
     flex: 1;
-    align-self:baseline;
+    align-self: baseline;
 
 }
 
@@ -105,22 +105,63 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 400px;
     object-fit: cover;
     box-shadow: 10px 10px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 
 /* Menu Page */
-.menu {}
+.menu {
+    line-height: 1.5;
+    text-align: center;
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 18vh 58vh 44vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'header header'
+        'div1 div2'
+        'div3 div4'
+    ;
+    gap: 1em;
+}
 
-.menu-header {}
+.menu-header {
+    grid-area: header;
+    padding-top: 12px;
 
-.menu-subHeader1 {}
+}
 
-.menu-subHeader2 {}
+.menu-div1 {
+    grid-area: div1;
+}
 
-.menu-subHeader3 {}
+.menu-subHeader1 {
+    padding: 7px 0;
+}
 
-.menu-subHeader4 {}
+.menu-div2 {
+    grid-area: div2;
+}
+
+.menu-subHeader2 {
+    padding: 7px 0;
+}
+
+.menu-div3 {
+    grid-area: div3;
+}
+
+.menu-subHeader3 {
+    padding: 7px 0;
+}
+
+.menu-div4 {
+    grid-area: div4;
+}
+
+.menu-subHeader4 {
+    padding: 7px 0;
+}
 
 
 /* Contact Page */
