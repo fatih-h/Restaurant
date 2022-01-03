@@ -9,7 +9,8 @@ html {
 
 body {
     margin: 0 3px;
-
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -47,15 +48,65 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* Welcome Page */
-.welcome {}
+.welcome {
+    height: 160vh;
+    margin: 1vh 0;
+}
 
-.welcome-header {}
+.welcome-div1 {
+    height: 80vh;
+    background-image: url(../image/burger-knife.jpg);
+    background-size: cover;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    margin-bottom: 1vh;
 
-.welcome-subHeader {}
+}
 
-.welcome-paragraph {}
+.welcome-header {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 4em;
+    padding-left: 2em;
+    color: #f2f4f3;
+}
 
-.welcome-img {}
+.welcome-subHeader {
+    padding-top: 5vh;
+    text-align: center;
+    height: 20vh;
+}
+
+.welcome-div2 {
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    gap:1em;
+    padding:0 10vw;
+
+}
+
+.welcome-img1 {
+    flex: 1;
+    max-width: 400px;
+    object-fit: cover;
+    box-shadow: -10px -10px;
+    border-radius: 5px;
+
+}
+
+.welcome-paragraph {
+    flex: 1;
+    align-self:baseline;
+
+}
+
+.welcome-img2 {
+    flex: 1;
+    max-width: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px;
+    border-radius: 5px; 
+}
 
 
 /* Menu Page */
@@ -94,11 +145,11 @@ h1, h2, h3, h4, h5, h6, p {
     height: 15vh;
     text-align: center;
     font-family: 'Oooh Baby', cursive;
+    margin: 3vh 0 1vh;
 }
 
 .footer-icons {
     display: flex;
-
     padding: 1vh 10vh;
     justify-content: space-evenly;
 }
