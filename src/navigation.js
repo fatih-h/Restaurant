@@ -1,6 +1,6 @@
-import welcome from "./welcome";
 
 function navigation() {
+
     let main = document.createElement('div');
     main.classList.add('navbar');
 
@@ -9,9 +9,9 @@ function navigation() {
     let welcome = document.createElement('button');
     let menu = document.createElement('button');
     let contact = document.createElement('button');
-    welcome.setAttribute('type','button');
-    menu.setAttribute('type','button');
-    contact.setAttribute('type','button');
+    welcome.setAttribute('type', 'button');
+    menu.setAttribute('type', 'button');
+    contact.setAttribute('type', 'button');
 
     option.classList.add('navbar-option');
     logoDiv.classList.add('navbar-logo-div');
@@ -35,4 +35,5 @@ function navigation() {
 
     return main;
 }
+
 export default navigation;

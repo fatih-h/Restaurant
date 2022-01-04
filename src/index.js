@@ -1,11 +1,3 @@
-import navigation from "./navigation";
-import welcome from "./welcome";
-import menu from "./menu";
-import contact from "./contact";
-import footer from "./footer";
+import web from "./website";
 
-const content = document.getElementById('content');
-
-content.appendChild(navigation());
-content.appendChild(welcome()); 
-content.appendChild(footer());
+web();
