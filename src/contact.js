@@ -42,7 +42,10 @@ function contact() {
     inputMail.setAttribute('placeholder', 'Mail');
     inputText.setAttribute('type', 'text');
     inputText.setAttribute('placeholder', 'Give us your opinion');
-    button.setAttribute('type', 'submit');
+    button.setAttribute('type', 'button');
+    button.addEventListener('click', e => {
+        alert("Thanks for submitting.");
+    });
     button.textContent = 'Submit';
 
     display1.textContent = "Let's Get in Touch";
