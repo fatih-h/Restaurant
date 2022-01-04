@@ -14,15 +14,15 @@ function footer() {
     icon2.classList.add('footer-i');
     icon3.classList.add('footer-i');
 
-    icon1.innerHTML = '<a href="#"><i style="color:black;" class="fab fa-facebook-f fa-2x f-button"></i></a>';
-    icon2.innerHTML =  '<a href="#"><i style="color:black;" class="fab fa-instagram fa-2x f-button"></i></a>';
-    icon3.innerHTML = '<a href="#"><i style="color:black;" class="fab fa-pinterest fa-2x f-button"></i></a>';
+    icon1.innerHTML = '<a href="#"><i style="color:#a8763e;" class="fab fa-facebook-f fa-2x f-button"></i></a>';
+    icon2.innerHTML = '<a href="#"><i style="color:#a8763e;" class="fab fa-instagram fa-2x f-button"></i></a>';
+    icon3.innerHTML = '<a href="#"><i style="color:#a8763e;" class="fab fa-pinterest fa-2x f-button"></i></a>';
     author.textContent = 'Copyright © Me 2022';
 
     main.appendChild(icons);
     icons.appendChild(icon1);
     icons.appendChild(icon2);
-    icons.appendChild(icon3);   
+    icons.appendChild(icon3);
     main.appendChild(author);
 
     return main;

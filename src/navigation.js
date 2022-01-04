@@ -2,8 +2,8 @@ function navigation() {
     let main = document.createElement('div');
     main.classList.add('navbar');
 
-    let option = document.createElement('div');
     let logoDiv = document.createElement('div');
+    let option = document.createElement('div');
     let welcome = document.createElement('h2');
     let menu = document.createElement('h2');
     let contact = document.createElement('h2');
