@@ -3,11 +3,13 @@ function navigation() {
     main.classList.add('navbar');
 
     let option = document.createElement('div');
-    let welcome = document.createElement('h3');
-    let menu = document.createElement('h3');
-    let contact = document.createElement('h3');
+    let logoDiv = document.createElement('div');
+    let welcome = document.createElement('h2');
+    let menu = document.createElement('h2');
+    let contact = document.createElement('h2');
 
     option.classList.add('navbar-option');
+    logoDiv.classList.add('navbar-logo-div');
     welcome.classList.add('navbar-welcome');
     menu.classList.add('navbar-menu');
     contact.classList.add('navbar-contact');
@@ -17,6 +19,7 @@ function navigation() {
     contact.textContent = 'Contact';
 
     main.append(option);
+    option.appendChild(logoDiv);
     option.appendChild(welcome);
     option.appendChild(menu);
     option.appendChild(contact);

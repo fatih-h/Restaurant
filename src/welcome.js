@@ -20,7 +20,7 @@ function welcome() {
     paragraph.classList.add('welcome-paragraph');
     img2.classList.add('welcome-img2');
 
-    header.textContent = 'There’s a recipe for\nevery Life';
+    header.textContent = 'Just like\ngrandma used \nto make';
     header.setAttribute('style', 'white-space: pre;');
     subHeader.textContent = 'Our Philosophy';
     paragraph.textContent = 'Best products with a unique taste makes you special in the Restaurant. The Restaurant provide the most quality foods and chefs all over the world.';
