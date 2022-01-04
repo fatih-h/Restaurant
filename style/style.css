@@ -60,6 +60,15 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 4vh 0;
 }
 
+.navbar-button-ui {
+    border: none;
+    padding: 0;
+    background: none;
+    color:inherit;
+    font: inherit;
+    text-align: inherit;
+    font-size: 2em;
+}
 
 
 /* Welcome Page */
