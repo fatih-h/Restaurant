@@ -3,6 +3,9 @@ import welcome from "./welcome";
 import menu from "./menu";
 import contact from "./contact";
 import footer from "./footer";
+import './style/style.css';
+
+
 
 function web() {
     const content = document.getElementById('content');

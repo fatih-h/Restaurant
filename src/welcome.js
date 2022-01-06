@@ -1,10 +1,13 @@
+import coffee from './image/cof.jpg';
+import sashimi from './image/sashimi.jpg';
+
 function welcome() {
     let main = document.createElement('div');
     main.classList.add('welcome');
 
     let div1 = document.createElement('div');
     let header = document.createElement('h1');
-    
+
     let div2 = document.createElement('div');
     let subHeader = document.createElement('h2');
     let img1 = document.createElement('img');
@@ -24,8 +27,8 @@ function welcome() {
     header.setAttribute('style', 'white-space: pre;');
     subHeader.textContent = 'Our Philosophy';
     paragraph.textContent = 'Best products with a unique taste makes you special in the Restaurant. The Restaurant provide the most quality foods and chefs all over the world.';
-    img1.setAttribute('src', '../dist/image/sashimi.jpg');
-    img2.setAttribute('src', '../dist/image/cof.jpg');
+    img1.setAttribute('src', `${coffee}`);
+    img2.setAttribute('src', `${sashimi}`);
 
 
     main.appendChild(div1);
